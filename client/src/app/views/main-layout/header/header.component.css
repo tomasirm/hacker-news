@@ -1,0 +1,17 @@
+.header {
+  width:100%;
+  overflow:hidden;
+  background:#252932;
+  margin-bottom:10px;
+}
+.wrapper {
+  width:90%;
+  max-width:1000px;
+  margin:auto;
+  overflow:hidden;
+  color: white;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.h1 .h2 {
+  color: white;
+}

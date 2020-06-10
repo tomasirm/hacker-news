@@ -1,0 +1,19 @@
+version: '2.1'
+services:
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+  client:  # Container name
+    build: ./client
+    ports:
+      - "4200:4200" # specify port forewarding
+  server:
+    build: ./server
+    ports:
+    - "3000:3000"
+    environment:
+      DB_URI: mongodb://mongo:27017/test
+    links:
+      - mongo
+

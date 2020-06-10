@@ -1,0 +1,3 @@
+<ng-template ngFor let-article [ngForOf]="articles | sortByDate: 'createdAt'">
+  <app-articles [article]="article" (deleteItemEventEmitter)="reciveDeleteItemEvent($event)"> </app-articles>
+</ng-template>

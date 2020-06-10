@@ -1,0 +1,14 @@
+<div>
+  <div class="container">
+    <h2 mat-dialog-title>{{data.title}}</h2>
+    <mat-dialog-content>
+      <p>{{data.content}}</p>
+    </mat-dialog-content>
+    <div class="clearfix">
+      <mat-dialog-actions>
+        <button mat-raised-button color="primary" (click)="submit()">Yes</button>
+        <button mat-raised-button color="warn" (click)="close()">No</button>
+      </mat-dialog-actions>
+    </div>
+  </div>
+</div>

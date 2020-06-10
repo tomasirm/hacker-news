@@ -1,0 +1,38 @@
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+
+.author {
+  color: #999;
+  margin-left: 15px;
+}
+.icon {
+  right: 50px;
+  float: inline-start;
+  position: absolute;
+}
+.icon:hover {
+  cursor: grabbing;
+}
+.date {
+  right: 120px;
+  float: inline-start;
+  position: absolute;
+}
+.title .time {
+  color: #333;
+  font-size: 13pt;
+}
+
+.row {
+  background-color: #fff;
+  border: 1px #ccc;
+}
+
+.row:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+}

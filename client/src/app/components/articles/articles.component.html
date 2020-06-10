@@ -1,0 +1,14 @@
+<mat-list class="row">
+  <mat-list-item (click)="clickEvent(article.story_url)" >
+    <h3 class="title"
+        matTooltip="{{getTextToolTip(article.comment_text)}}"
+        matTooltipPosition="below">
+      {{article.story_title ? article.story_title : article.title}}
+    </h3>
+    <h3 class="author">- {{article.author}} -</h3>
+    <h3 class="date">{{article.created_at | date :'short'}}</h3>
+    <h3 class="icon"><mat-icon (click)="setDeleteItem(article.objectID);  $event.stopPropagation();">delete</mat-icon></h3>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+</mat-list>
+
